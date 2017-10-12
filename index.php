@@ -10,18 +10,6 @@ $newuser = $request->infoUsers();
 $newrepo = $request->infoRepos();
 ?>
 
-/*$client = new GuzzleHttp\Client();
-$res = $client->request('GET', 'https://api.github.com/users/fantasiag', [
-'auth' => ['fantasiag', 'c2u8knrt']
-]);
-
-echo $res->getStatusCode();
-// "200"
-echo $res->getHeader('content-type');
-// 'application/json; charset=utf8'
-echo $res->getBody();
-// {"type":"User"...'*/
-
 <!doctype html>
 <html lang="en">
 <head>
