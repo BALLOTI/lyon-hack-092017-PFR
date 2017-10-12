@@ -1,0 +1,19 @@
+{
+  "name": "api/hackaton",
+  "description": "hackaton snippet github",
+  "type": "project",
+  "authors": [
+    {
+      "name": "fantasiag",
+      "email": "fantasia.g1994@gmail.com"
+    }
+  ],
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "PFR\\": "src/"
+    }
+  }
+}
