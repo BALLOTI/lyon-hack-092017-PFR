@@ -13,10 +13,13 @@ class ComposerStaticInitdf38051f7f1239e4fc67d066bc990558
     );
 
     public static $prefixLengthsPsr4 = array (
+        'a' => 
+        array (
+            'api\\' => 4,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
-            'PFR\\' => 4,
         ),
         'G' => 
         array (
@@ -24,16 +27,20 @@ class ComposerStaticInitdf38051f7f1239e4fc67d066bc990558
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
+        'A' => 
+        array (
+            'Aura\\Autoload\\' => 14,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'api\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'PFR\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
         ),
         'GuzzleHttp\\Psr7\\' => 
         array (
@@ -46,6 +53,10 @@ class ComposerStaticInitdf38051f7f1239e4fc67d066bc990558
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Aura\\Autoload\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/aura/autoload/src',
         ),
     );
 
