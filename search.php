@@ -3,7 +3,7 @@
 require "vendor/autoload.php";
 use api\Autoload;
 
-$user = 'user';
+$user = 'fantasiag';
 
 $request = new Autoload($user);
 $newuser = $request->infoUsers();
@@ -70,6 +70,8 @@ $newrepo = $request->infoRepos();
 
     </div>
 </div>
+
+
 
 <footer class="page-footer blue-grey">
     <div class="container">
