@@ -1,6 +1,6 @@
 <?php
 
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 use api\Autoload;
 
 $user = 'fantasiag';
@@ -19,18 +19,18 @@ $newrepo = $request->infoRepos();
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 <nav class="blue-grey darken-2" role="navigation">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Return home</a></li>
+            <li><a href="../index.php">Return home</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -89,8 +89,8 @@ $newrepo = $request->infoRepos();
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<script src="../js/materialize.js"></script>
+<script src="../js/init.js"></script>
 
 </body>
 </html>

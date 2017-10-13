@@ -1,73 +1,61 @@
-<?php
-
-require "vendor/autoload.php";
-use api\Autoload;
-
-$user = 'BALLOTI';
-
-$request = new Autoload($user);
-$newuser = $request->infoUsers();
-$newrepo = $request->infoRepos();
-?>
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>GitHub Snippet</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<nav>
-    <form>
-        <div class="nav-wrapper">
+<nav class="blue-grey darken-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
 
-            <div class="input-field">
-
-                <h3><?php echo $newuser->login ?></h3></div>
-            </i>
-        </div>
-        </div>
-    </form>
+        <ul id="nav-mobile" class="side-nav">
+            <li><a href="#">Navbar Link</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
 </nav>
-
-<div class="container">
-    <h1>Informations sur un profil GitHub</h1>
-    <div class="row">
-        <div class="card-image col s12 l6">
-            <img src="<?php echo $newuser->avatar_url; ?>">
-            <span class="card-title"></span>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+        <br><br>
+        <h1 class="header center blue-grey-text">GitHub Portfolio</h1>
+        <div class="row center">
+            <h5 class="header col s12 light">A snippet using Github API to create your Github portfolio!</h5>
         </div>
-        <div class="card-image col s12 l6">
-            <ul>
-                <a href=""></a>
-                <?php
-
-                for ($i = 0; $i <= 2; $i++) {
-                    echo "<li>" . "<a href=\"";
-                    echo $newrepo[$i]->html_url;
-                    echo "\">";
-                    echo $newrepo[$i]->name . "</a>";
-                    echo "</li>";
-                }
-                ?>
-            </ul>
+        <div class="row center">
+            <a href="public/search.php" id="download-button" class="btn-large waves-effect waves-light blue-grey darken-1">Get Started</a>
         </div>
+        <br><br>
 
-        <div class="card-action col s4">
-            <a href="<?php echo $newuser->html_url; ?>">Go in my github</a>
-        </div>
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-</body>
-<footer>
-
-    <div class="container white black-text">
-        © 2017 Copyright Text.
+<footer class="page-footer blue-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col l12 s12">
+                <h5 class="white-text">About</h5>
+                <p class="grey-text text-lighten-4">We are a team of developers students working on this project for a hackathon, like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            </div>
+        </div>
     </div>
-
+    <div class="footer-copyright">
+    </div>
 </footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
 </html>
