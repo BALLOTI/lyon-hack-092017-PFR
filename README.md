@@ -1,6 +1,6 @@
 # Github Snippet
 
-One Paragraph of project description goes here
+WELCOME THERE, DEV !! PLEASE DOWNLOAD OUR SNIPPET !! :o)
 
 ## Getting Started
 
