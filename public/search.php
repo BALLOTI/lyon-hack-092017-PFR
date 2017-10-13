@@ -3,7 +3,7 @@
 require "../vendor/autoload.php";
 use api\Autoload;
 
-$user = 'fantasiag';
+$user = 'username';
 
 $request = new Autoload($user);
 $newuser = $request->infoUsers();
